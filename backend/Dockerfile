@@ -1,5 +1,7 @@
 FROM golang:latest
 
+ENV GOPROXY=direct
+
 WORKDIR /app
 
 COPY . .
