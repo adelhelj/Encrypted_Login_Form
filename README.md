@@ -16,6 +16,20 @@ This project is a simple web application build with a React Frontend with Materi
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+## Password Encryption
+
+To enhance the security of user credentials, the application implements password hashing and verification using the bcrypt package in the Golang backend.
+
+### Password Hashing
+
+- During the sign-up process, user passwords are hashed using bcrypt before being stored in the PostgreSQL database. This ensures that plain text passwords are never saved directly in the database.
+
+### Password Verification
+
+- During the login process, the entered password is verified against the stored hashed password using bcrypt. This ensures that the credentials provided by the user match the securely stored hash.
+
+These changes ensure that user passwords are securely managed, providing an additional layer of security to the application.
+
 ## How to Use
 
 ### Signing Up
