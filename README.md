@@ -1,4 +1,4 @@
-# Login Form - CTC Assessment
+# Encrypted Login Form
 
 ## A Containerized Webapp with Basic Login Functionality
 This project is a simple web application build with a React Frontend with Material UI components, and Golang Backend with a PostgreSQL database, containerized with Docker. The application allows a user to sign up, log in, and log out. The user will be presented various error messages if any conflicts arise, such as trying to sign up with incorrect credentials, credentials that don't exist in the database, trying to sign up with duplicate emails, and more.
